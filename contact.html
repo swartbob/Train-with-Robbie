@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Training with Robbie</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        nav {
+            background: #000;
+            text-align: center;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: #FFD700;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .contact-container h1 {
+            margin-bottom: 1rem;
+        }
+
+        form {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        form input, form textarea, form button {
+            width: 100%;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        form button {
+            background: #FFD700;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+
+        form button:hover {
+            background: #333;
+            color: #FFD700;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html#welcome">Welcome</a>
+        <a href="index.html#about">About Me</a>
+        <a href="index.html#offerings">Our Approach</a>
+        <a href="index.html#cta">Try Here</a>
+        <a href="store.html">Store</a>
+        <a href="contact.html">Contact</a>
+        <a href="videos_resources_page.html">Videos & Resources</a>
+        <a href="faq.html">FAQ</a>
+    </nav>
+
+    <section class="contact-container">
+        <h1>Contact Us</h1>
+        <p>Fill out the form below, and we will get back to you as soon as possible to discuss your goals and how we can help you.</p>
+        <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your goals or questions" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>
